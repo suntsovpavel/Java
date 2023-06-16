@@ -16,27 +16,27 @@ public class task4 {
         fh.setFormatter(sFormat);
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите первое число: ");
-        int a = iScanner.nextInt();
+        double a = iScanner.nextDouble();
         System.out.printf("Введите знак операции (+,-,*,/): ");
         char ch = iScanner.next().charAt(0);
         System.out.printf("Введите второе число: ");
-        int b = iScanner.nextInt();
+        double b = iScanner.nextDouble();
         if(ch == '+'){
-            int result = a + b;
-            System.out.println(String.format("Результат: %d + %d = %d", a,b,result));
-            logger.info(String.format("%d + %d = %d", a,b,result));
+            double result = a + b;
+            System.out.println(String.format("Результат: %f + %f = %f", a,b,result));
+            logger.info(String.format("%f + %f = %f", a,b,result));
         }else if(ch == '-'){
-            int result = a - b;
-            System.out.println(String.format("Результат: %d - %d = %d", a,b,result));
-            logger.info(String.format("%d - %d = %d", a,b,result));
+            double result = a - b;
+            System.out.println(String.format("Результат: %f - %f = %f", a,b,result));
+            logger.info(String.format("%f - %f = %f", a,b,result));
         }else if(ch == '*'){
-            int result = a * b;
-            System.out.println(String.format("Результат: %d * %d = %d", a,b,result));
-            logger.info(String.format("%d * %d = %d", a,b,result));
+            double result = a * b;
+            System.out.println(String.format("Результат: %f * %f = %f", a,b,result));
+            logger.info(String.format("%f * %f = %f", a,b,result));
         }else if(ch == '/'){
-            Double result = a/Double.valueOf(b);
-            System.out.println(String.format("Результат: %d / %d = %f", a,b,result));
-            logger.info(String.format("%d / %d = %f", a,b,result));
+            double result = a / b;
+            System.out.println(String.format("Результат: %f / %f = %f", a,b,result));
+            logger.info(String.format("%f / %f = %f", a,b,result));
         }else{
             System.out.println(String.format("Неизвестный знак операции: %s", ch));
         }
