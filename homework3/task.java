@@ -53,7 +53,7 @@ public class task {
     public static ArrayList<Integer> GenerateArrayListInteger(int number){
         if (number <= 0)
             return new ArrayList<Integer>();
-        ArrayList<Integer> list = new ArrayList<Integer>(number<0 ? 0:number);
+        ArrayList<Integer> list = new ArrayList<Integer>(number);
         Random rand = new Random();        
         for (int i=0; i<number; i++)
             list.add(rand.nextInt(100));
