@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Notebook {
     //1. Возможные варианты ОС, цвета, размера ОЗУ и HDD
-    public enum OS {
+    public static enum OS {
         Windows,
         MacOS,
         Linux; 
