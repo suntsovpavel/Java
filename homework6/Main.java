@@ -185,7 +185,7 @@ public class Main {
                 if (map.containsKey(code))
                     set = map.get(code);
                 int value = iScanner.nextInt();
-                if(value < 0 || value >= Notebook.Color.SIZE){
+                if(value < 0 || value >= Notebook.OS.SIZE){
                     System.out.println("Введено значение вне допустимого диапазона");
                     continue;  
                 }
