@@ -45,7 +45,7 @@ public class task {
             String Name = splitted[0]; 
             int Phone = Integer.parseInt(splitted[1]);
 
-            if(map.containsKey(Name)){
+            if(map.containsKey(Name)){   //данные для имени Name уже содержатся в map
                 ArrayList<Integer> phones = map.get(Name);
                 for(int phone : phones)
                     if(Phone==phone)
@@ -53,7 +53,7 @@ public class task {
                 phones.add(Phone);
                 Collections.sort(phones);   //сортируем список телефонов по возрастанию
                 map.put(Name, phones);                
-            }else{
+            }else{   //данных для имени Name не имеется в map
                 ArrayList<Integer> phones = new  ArrayList<Integer>();
                 phones.add(Phone);
                 map.put(Name, phones);              
