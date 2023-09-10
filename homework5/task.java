@@ -62,9 +62,7 @@ public class task {
         
         //Выводим телефонную книгу. 
         // Вывод должен быть отсортирован по убыванию числа телефонов.
-        Set<String> keyset  = map.keySet();
-        //System.out.printf(keyset.toString());             
-
+        Set<String> keyset  = map.keySet();    
         while(!keyset.isEmpty()){
             //Ищем в списке фамилию с наибольшим количеством телефонов 
             int max=0; String smax="";
